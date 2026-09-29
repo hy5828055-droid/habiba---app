@@ -1,9 +1,9 @@
 const FILES = [
-  { id:1, subject:'arabic', type:'sharh', ensub:null, kind:'bdf',
+  { id:1, subject:'arabic', type:'sharh', ensub:null, kind:'pdf',
     titleAr:'الأسماء الخمسة — نحو (شرح)', titleEn:'The Five Nouns — Arabic Grammar',
     descAr:'ملف شرح تفاعلي', descEn:'Interactive lesson file',
     file:'files/asmaa-khamsa-PDF.pdf' },
-  { id:2, subject:'english', type:'sharh', ensub:'grammar', kind:'bdf',
+  { id:2, subject:'english', type:'sharh', ensub:'grammar', kind:'pdf',
     titleAr:'Relative Clauses — جرامر (شرح)', titleEn:'Relative Clauses — Grammar',
     descAr:'شرح شامل + تريكات الامتحان', descEn:'Full lesson + exam tricks',
     file:'files/relative-clauses-PDF.pdf' },
