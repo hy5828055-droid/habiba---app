@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Relative Clauses - جمل الوصل | تانية بكالوريا</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Cairo',Tahoma,Arial,sans-serif;background:#eef6f5;color:#1f2937;line-height:1.9}
+.page{max-width:860px;margin:24px auto;background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 8px 32px rgba(15,118,110,.15)}
+.hero{background:linear-gradient(135deg,#134e4a 0%,#0f766e 60%,#14b8a6 100%);color:#fff;padding:34px 30px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;left:-40px;width:160px;height:160px;background:rgba(255,255,255,.08);border-radius:50%}
+.hero::after{content:"";position:absolute;bottom:-60px;right:-30px;width:200px;height:200px;background:rgba(255,255,255,.07);border-radius:50%}
+.hero .tag{display:inline-block;background:#fbbf24;color:#134e4a;font-weight:900;font-size:13px;border-radius:20px;padding:4px 18px;margin-bottom:10px}
+.hero h1{font-size:36px;font-weight:900;line-height:1.4}
+.hero h1 .en{display:block;font-size:26px;letter-spacing:1px;color:#fde68a}
+.hero p{color:#ccfbf1;font-size:15px;margin-top:6px}
+.body{padding:26px 28px 30px}
+.toc{background:#f0fdfa;border:2px dashed #14b8a6;border-radius:14px;padding:14px 20px;font-size:14.5px;margin-bottom:16px;color:#134e4a}
+.toc b{color:#0f766e}
+h2{color:#134e4a;font-size:20px;margin:24px 0 6px;display:flex;align-items:center;gap:10px}
+h2 .num{background:#0f766e;color:#fff;min-width:34px;height:34px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;font-size:17px;font-weight:900}
+h2 .en-tag{background:#fef3c7;color:#92400e;font-size:12px;border-radius:8px;padding:2px 10px;font-weight:800}
+p.desc{font-size:15.5px;margin:6px 0 10px;color:#334155}
+.card{background:#f8fafc;border:1px solid #e2e8f0;border-right:6px solid #0f766e;border-radius:12px;padding:13px 17px;margin:10px 0;font-size:15px}
+.card.amber{border-right-color:#f59e0b;background:#fffbeb}
+.card.rose{border-right-color:#f43f5e;background:#fff1f2}
+.card b{color:#134e4a}
+.card .hl{background:#fef08a;padding:0 6px;border-radius:5px;font-weight:800}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14.5px;border-radius:12px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+th{background:#134e4a;color:#fff;padding:10px 8px;font-size:14px}
+td{border:1px solid #e2e8f0;padding:10px 8px;text-align:center}
+tr:nth-child(even) td{background:#f0fdfa}
+td.en{direction:ltr;font-weight:700;color:#0f766e}
+.sentence{background:#fff;border:2px solid #134e4a;border-radius:14px;padding:14px 18px;margin:10px 0;page-break-inside:avoid}
+.sentence .en-sent{direction:ltr;text-align:left;font-size:17px;font-weight:700;line-height:2;background:#f0fdfa;border-radius:10px;padding:10px 14px;margin-bottom:8px}
+.sentence .en-sent .ant{background:#134e4a;color:#fff;padding:1px 8px;border-radius:6px}
+.sentence .en-sent .rel{background:#f59e0b;color:#fff;padding:1px 10px;border-radius:6px}
+.sentence .en-sent .clause{background:#fef08a;padding:1px 8px;border-radius:6px;color:#713f12}
+.sentence .ar{font-size:14.5px;color:#475569}
+.sentence .rule-line{margin-top:6px;font-size:14px;background:#ecfdf5;border-radius:8px;padding:6px 12px;color:#065f46}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+.vs>div{border-radius:14px;padding:14px 16px;font-size:14.5px}
+.vs .def-yes{background:#ecfdf5;border:2px solid #10b981}
+.vs .def-no{background:#fff1f2;border:2px solid #f43f5e}
+.vs h3{text-align:center;margin-bottom:6px;font-size:16px}
+.vs .def-yes h3{color:#065f46}
+.vs .def-no h3{color:#9f1239}
+.badge{display:inline-block;font-size:12px;font-weight:800;border-radius:8px;padding:2px 10px;margin:2px}
+.b-ok{background:#d1fae5;color:#065f46}
+.b-no{background:#ffe4e6;color:#9f1239}
+.b-warn{background:#fef3c7;color:#92400e}
+.steps{display:grid;gap:10px;margin:10px 0}
+.step-box{display:flex;gap:12px;align-items:flex-start;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px 14px}
+.step-box .s-num{background:#f59e0b;color:#fff;font-weight:900;min-width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px}
+.ex{background:#fff;border:2px solid #0f766e;border-radius:14px;padding:12px 16px;margin:10px 0;page-break-inside:avoid}
+.ex .q{direction:ltr;text-align:left;font-weight:800;font-size:16px;color:#111827}
+.ex .a{margin-top:6px;font-size:14.5px;background:#f0fdfa;border-radius:8px;padding:8px 12px}
+.ex .a b{color:#0f766e}
+.quiz{background:linear-gradient(180deg,#fffbeb,#fef3c7);border:2px solid #f59e0b;border-radius:14px;padding:14px 18px;margin:12px 0}
+.quiz ol{padding-right:20px;font-size:15px}
+.quiz li{margin:6px 0}
+.quiz .ans{font-size:13.5px;color:#92400e}
+.key{background:#134e4a;color:#fff;border-radius:16px;padding:18px 22px;margin-top:20px;font-size:15px;line-height:2}
+.key span{background:#fbbf24;color:#134e4a;border-radius:6px;padding:0 8px;font-weight:900}
+.key .en{direction:ltr;display:inline-block}
+.foot{text-align:center;margin-top:14px;color:#64748b;font-size:13px}
+@media(max-width:640px){.vs{grid-template-columns:1fr}.hero h1{font-size:28px}.body{padding:18px}}
+@page{size:A4;margin:10mm}
+@media print{.page{box-shadow:none;margin:0;max-width:100%}}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="hero">
+<div style="display:inline-block;background:rgba(255,255,255,.15);border:1.5px solid #fbbf24;border-radius:12px;padding:6px 22px;margin-bottom:12px;font-weight:800;font-size:14px;color:#fff">إعداد : حبيبه ضياء الدين</div>
+<br><div class="tag">تانية بكالوريا — شرح شامل + تريكات الامتحان</div>
+<h1>جمل الوصل <span class="en">RELATIVE CLAUSES</span></h1>
+<p>الدرس اللي بيخوف الكل… هتفهمه في 10 خطوات وبأمثلة ملونة</p>
+</div>
+<div class="body">
+
+<div class="toc"><b>خريطة الدرس:</b> 1- الفكرة + المعادلة 2- الضمائر 3- Defining و Non-defining 4- WHO فاعل/مفعول 5- WHOM و WHICH و THAT 6- whose 7- where / when / why 8- that ضد what 9- حروف الجر 10- أخطاء 11- طريقة الحل 5 خطوات + تدريب</div>
+
+<h2><span class="num">1</span> الفكرة في جملة واحدة <span class="en-tag">THE IDEA</span></h2>
+<p class="desc">جملة الوصل بتلزق جملتين في بعض عشان ما نكررش الاسم. بدل ما تقول جملتين، بتوصف الاسم بجملة زيادة.</p>
+<div class="sentence">
+<div class="en-sent">The man <span class="rel">who</span> <span class="clause">lives next to us</span> is a doctor.</div>
+<div class="ar">الرجل <b>الذي يسكن بجانبنا</b> يكون طبيبًا. — بدل ما تقول: The man is a doctor + He lives next to us.</div>
+<div class="rule-line">التركيبة دايمًا: <b>اسم (Antecedent)</b> + <b>ضمير وصل</b> + <b>جملة الوصل</b> اللي بتوصفه</div>
+</div>
+<div class="card amber">احفظ المعادلة دي:<br><span class="hl">الاسم الموصوف + ضمير الوصل + جملة الوصل</span><br><span dir="ltr" style="font-weight:800;color:#0f766e">Antecedent + Relative Pronoun + Clause</span> — لو حفظتها، نص الدرس خلص.</div>
+
+<h2><span class="num">2</span> ضمائر الوصل كلها في جدول <span class="en-tag">RELATIVE PRONOUNS</span></h2>
+<table>
+<tr><th>الضمير</th><th>بنستخدمه لمين؟</th><th>مثال</th></tr>
+<tr><td><b>who</b></td><td>عاقل (فاعل أو مفعول)</td><td class="en">The girl who helped me</td></tr>
+<tr><td><b>whom</b></td><td>عاقل (مفعول - رسمي)</td><td class="en">The man whom I met</td></tr>
+<tr><td><b>which</b></td><td>غير عاقل (حيوان/شيء)</td><td class="en">The book which I bought</td></tr>
+<tr><td><b>that</b></td><td>عاقل + غير عاقل (Defining فقط)</td><td class="en">The car that is fast</td></tr>
+<tr><td><b>whose</b></td><td>الملكية (عاقل وغير عاقل)</td><td class="en">The boy whose phone rang</td></tr>
+<tr><td><b>where</b></td><td>المكان</td><td class="en">The city where I was born</td></tr>
+<tr><td><b>when</b></td><td>الزمان</td><td class="en">The day when we met</td></tr>
+<tr><td><b>why</b></td><td>السبب (بعد reason فقط)</td><td class="en">The reason why she left</td></tr>
+</table>
+<div class="card"><b>ملحوظة الامتحان:</b> بعد <b>everything, something, anything, nothing, all, superlatives (best, first...)</b> بنستخدم <b>that</b> مش who/which. مثال: <span dir="ltr" style="font-weight:700">This is the best film that I have seen.</span></div>
+
+<h2><span class="num">3</span> أهم فرق: Defining ضد Non-defining <span class="en-tag">MOST IMPORTANT</span></h2>
+<p class="desc">ده السؤال اللي بييجي في البكالوريا كل سنة. افهمه كويس.</p>
+<div class="vs">
+<div class="def-yes"><h3>Defining — محدِّدة ✅</h3>معلومة <b>أساسية</b> — من غيرها الجملة ناقصة ومش هنعرف مين المقصود.<br><span class="badge b-ok">بدون commas</span> <span class="badge b-ok">that مسموحة</span><br><span dir="ltr" style="font-weight:700">The students who study hard succeed.</span><br>أنهي طلبة؟ اللي بيذاكروا. لو شلت الجملة المعنى يضيع.</div>
+<div class="def-no"><h3>Non-defining — غير محدِّدة ℹ️</h3>معلومة <b>زيادة</b> — الاسم معروف أصلًا (اسم شخص، مدينة).<br><span class="badge b-no">commas إجباري , ,</span> <span class="badge b-no">that ممنوعة ⛔</span><br><span dir="ltr" style="font-weight:700">Sofia, who lives in Rabat, is my friend.</span><br>صوفيا معروفة، والجملة الزيادة لو اتشالت المعنى سليم.</div>
+</div>
+<div class="card rose"><b>قاعدة ذهبية:</b> شفت فاصلتين <b>, ,</b>؟ يبقى <b>Non-defining</b> → اوعى تختار <b>that</b>. اختار who / which / whose فقط.</div>
+<div class="sentence">
+<div class="en-sent">My brother <span class="rel">, who ,</span> <span class="clause">lives in Casa,</span> is an engineer.</div>
+<div class="ar">أخويا معروف، وجملة "اللي ساكن في كازا" معلومة إضافية فقط — عشان كده حطينا commas.</div>
+</div>
+
+<h2><span class="num">4</span> WHO فاعل ولا مفعول؟ وإمتى نحذف؟ <span class="en-tag">WHO SUBJECT / OBJECT</span></h2>
+<p class="desc">دي أهم حتة من اللي انت بعتها — لو فهمتها هتعرف تحذف ولا لأ.</p>
+<div class="sentence">
+<div class="en-sent">The boy <span class="rel">who</span> <span class="clause">plays football</span> is my brother.</div>
+<div class="ar">مين اللي بيلعب؟ <b>الولد</b> — إذن who = فاعل (Subject) — <b>ممنوع الحذف</b> ⛔<br>❌ <span dir="ltr">The boy plays football is my brother.</span></div>
+</div>
+<div class="sentence">
+<div class="en-sent">The boy <span class="rel">who</span> <span class="clause">I met yesterday</span> is my friend. = The boy I met yesterday is my friend.</div>
+<div class="ar">مين عمل الفعل؟ <b>I</b> = فاعل — ومين وقع عليه الفعل؟ <b>الولد</b> = مفعول — إذن who = مفعول (Object) — <b>الحذف مسموح ✅</b></div>
+</div>
+<table>
+<tr><th>الحالة</th><th>الحكم</th><th>مثال</th></tr>
+<tr><td>ضمير فاعل (بعده فعل)</td><td><span class="badge b-no">ممنوع الحذف</span></td><td class="en">who lives / who plays / who works</td></tr>
+<tr><td>ضمير مفعول (بعده فاعل + فعل)</td><td><span class="badge b-ok">الحذف مسموح</span></td><td class="en">who I met / who she called / who we saw</td></tr>
+</table>
+<div class="card"><b>القاعدة السهلة من ملفك:</b> بص على اللي بعد الفراغ.<br><b>who + فعل مباشرة</b> → فاعل → ما تحذفش.<br><b>who + اسم/ضمير + فعل</b> → مفعول → احذف عادي.<br><span dir="ltr">The book ___ I bought → بعد الفراغ I (فاعل) → مفعول → <b>which / that / ∅</b></span></div>
+
+<h2><span class="num">5</span> WHOM و WHICH و THAT بالتفصيل <span class="en-tag">WHOM / WHICH / THAT</span></h2>
+<div class="card"><b>WHOM = عاقل كمفعول (رسمي):</b> <span dir="ltr" style="font-weight:700">The man whom I met was kind.</span> = <span dir="ltr" style="font-weight:700">The man who I met was kind.</span> = <span dir="ltr" style="font-weight:700">The man I met was kind.</span> — التلاتة صح، الأولى رسمية.<br><b>مهم بعد حرف الجر:</b> <span dir="ltr" style="font-weight:700">to whom ✅</span> وليس <span dir="ltr" style="font-weight:700">❌ to who</span> — <span dir="ltr">The man to whom I spoke was kind.</span></div>
+<div class="sentence">
+<div class="en-sent">The book <span class="rel">which</span> <span class="clause">I bought</span> is interesting. = The book I bought is interesting.</div>
+<div class="ar">which هنا مفعول (I bought the book) → <b>الحذف مسموح ✅</b></div>
+</div>
+<div class="sentence">
+<div class="en-sent">The car <span class="rel">which</span> <span class="clause">is outside</span> is mine.</div>
+<div class="ar">which هنا فاعل (السيارة هي اللي بره) → <b>ممنوع الحذف ⛔</b> — ❌ <span dir="ltr">The car is outside is mine.</span></div>
+</div>
+<div class="card amber"><b>THAT = عاقل + غير عاقل + حيوان (Defining فقط):</b> <span dir="ltr" style="font-weight:700">The man that lives here / The book that I bought</span><br><b>ممنوع حرف جر قبل that مباشرة:</b> ❌ <span dir="ltr">to that / for that / with that / in that</span> — لو عايز رسمي: <span dir="ltr">to whom / in which</span> — لو عادي خلي حرف الجر في الآخر: <span dir="ltr">The man that I spoke to ✅</span></div>
+
+<h2><span class="num">6</span> الملكية: whose + التريكة الذهبية <span class="en-tag">WHOSE</span></h2>
+<div class="sentence">
+<div class="en-sent">The girl <span class="rel">whose</span> <span class="clause">bag was stolen</span> is crying.</div>
+<div class="ar">البنت <b>التي سُرقت حقيبتها</b> تبكي. — whose + اسم (bag) = بتاعتها</div>
+<div class="rule-line">التركيبة: <b>whose + الاسم المملوك</b> — اوعى تتلخبط مع <b>who's = who is</b></div>
+</div>
+<div class="card"><b>تريكة ملفك:</b> لو لقيت في الجملة <b>his / her / their / its</b> غالبًا هتحتاج <b>whose</b>.<br>مثال: I know the girl. Her father is a doctor → <span dir="ltr" style="font-weight:700">I know the girl whose father is a doctor.</span><br><b>whose + اسم:</b> whose father / whose mother / whose car / whose house / whose book</div>
+<div class="card amber"><b>للغير عاقل:</b> ممكن نقول <b>whose</b> أو <b>of which</b>: <span dir="ltr" style="font-weight:700">A car whose engine is strong = A car the engine of which is strong.</span> الأولى أسهل واحفظها.</div>
+
+<h2><span class="num">7</span> المكان والزمان والسبب <span class="en-tag">WHERE / WHEN / WHY</span></h2>
+<table>
+<tr><th>الأداة</th><th>بتساوي إيه؟</th><th>مثال</th></tr>
+<tr><td><b>where</b> = in/at which</td><td>المكان</td><td class="en">The house where (= in which) I grew up</td></tr>
+<tr><td><b>when</b> = on/in which</td><td>الزمان</td><td class="en">The year when (= in which) I was born</td></tr>
+<tr><td><b>why</b> = for which</td><td>بعد reason فقط</td><td class="en">The reason why (= for which) he came</td></tr>
+</table>
+<div class="card rose"><b>ممنوع التركيب المزدوج:</b> ❌ <span dir="ltr">in where / at where / on where</span> — لأن where فيها معنى المكان لوحدها. نفس الكلام: ❌ <span dir="ltr">on when / in when / at when</span><br>✅ الصح: <span dir="ltr">The house where I live = The house in which I live</span> — <span dir="ltr">the day when we met = the day on which we met</span></div>
+<div class="card">ممكن تحذفهم وتحط <b>that / ∅</b> في Defining: <span dir="ltr" style="font-weight:700">The day (that) we met was nice.</span> — أمثلة ملفك: <span dir="ltr">This is the school where I studied / Cairo is the city where I was born / I remember the day when we met.</span></div>
+
+<h2><span class="num">8</span> الفخ: that ضد what <span class="en-tag">TRAP</span></h2>
+<div class="card rose"><b>what = the thing that</b> — فيها الاسم جواها، فـ <b>ما يجيش قبلها اسم!</b><br>❌ <span dir="ltr">The thing what I said</span> — ✅ <span dir="ltr">What I said was true / The thing that I said was true.</span></div>
+
+<h2><span class="num">9</span> حروف الجر (الرسمي) + جدول الحفظ <span class="en-tag">PREPOSITIONS</span></h2>
+<p class="desc">في الرسمي بنحط حرف الجر قبل which / whom. وفي العادي بنرميه في الآخر.</p>
+<div class="sentence">
+<div class="en-sent">The man <span class="rel">to whom</span> <span class="clause">I spoke</span> was kind. = The man <span class="rel">who</span> I spoke <span class="clause">to</span>.</div>
+<div class="ar">الاتنين صح. الأولى رسمية (للبكالوريا)، والتانية شعبية. واحفظ: <b>that ممنوعة بعد حرف جر</b> ⛔</div>
+<div class="rule-line">❌ <span dir="ltr">to that</span> — ✅ <span dir="ltr">to which / to whom</span></div>
+</div>
+<table>
+<tr><th>الكلمة</th><th>حرف جر قبلها؟</th><th>مثال من ملفك</th></tr>
+<tr><td><b>WHOM</b></td><td>✅ to whom / with whom / for whom</td><td class="en">The man to whom I spoke</td></tr>
+<tr><td><b>WHICH</b></td><td>✅ in which / for which / with which</td><td class="en">The company for which he works</td></tr>
+<tr><td><b>THAT</b></td><td>❌ ممنوع بعد حرف جر</td><td class="en">❌ for that → ✅ that ... for</td></tr>
+<tr><td><b>WHERE</b></td><td>❌ ممنوع in where</td><td class="en">where = in which</td></tr>
+<tr><td><b>WHEN</b></td><td>❌ ممنوع on when</td><td class="en">when = on which</td></tr>
+<tr><td><b>WHOSE</b></td><td>بعدها اسم مباشرة</td><td class="en">whose father / whose car</td></tr>
+</table>
+
+<h2><span class="num">10</span> 5 أخطاء بتوقعك في الامتحان <span class="en-tag">MISTAKES</span></h2>
+<div class="steps">
+<div class="step-box"><div class="s-num">1</div><div>❌ <span dir="ltr">The man which came</span> → ✅ <span dir="ltr">who/that</span> — العاقل ما ياخدش which.</div></div>
+<div class="step-box"><div class="s-num">2</div><div>❌ <span dir="ltr">Sofia, that lives...</span> → ✅ <span dir="ltr">who</span> — بعد comma ممنوع that.</div></div>
+<div class="step-box"><div class="s-num">3</div><div>❌ تكرار الضمير: <span dir="ltr">The book which I bought it</span> → شيل <span dir="ltr">it</span>.</div></div>
+<div class="step-box"><div class="s-num">4</div><div>❌ <span dir="ltr">whose vs who's</span> — <span dir="ltr">who's = who is</span> — <span dir="ltr">The boy who's running (who is)</span> ضد <span dir="ltr">whose bag</span>.</div></div>
+<div class="step-box"><div class="s-num">5</div><div>❌ نسيان الفاصلة بيغير المعنى: <span dir="ltr">My brothers who live abroad… (بعضهم)</span> ضد <span dir="ltr">My brothers, who live abroad,… (كلهم)</span>.</div></div>
+</div>
+
+<h2><span class="num">11</span> طريقة الحل في 5 خطوات + تدريب <span class="en-tag">EXAM METHOD</span></h2>
+<div class="steps">
+<div class="step-box"><div class="s-num">1</div><div><b>بص على الاسم قبل الفراغ:</b> 👤 شخص؟ 📦 شيء؟ 📍 مكان؟ ⏰ وقت؟ 👨‍👩‍👧 ملكية (his/her/their)؟<br>Person → who / whom / that — Thing → which / that — Possession → whose — Place → where — Time → when</div></div>
+<div class="step-box"><div class="s-num">2</div><div><b>فيه commas؟</b> أيوه → Non-defining → اشطب that فورًا.</div></div>
+<div class="step-box"><div class="s-num">3</div><div><b>فاعل ولا مفعول؟</b> بعد الفراغ فعل → فاعل (ممنوع الحذف). بعد الفراغ اسم + فعل → مفعول (الحذف مسموح).<br><span dir="ltr">who plays (فاعل) / who I met (مفعول: I=فاعل + met=فعل)</span></div></div>
+<div class="step-box"><div class="s-num">4</div><div><b>فيه حرف جر قبل الفراغ؟</b> شخص → WHOM (to whom) — شيء → WHICH (in which) — ممنوع that بعد حرف جر.</div></div>
+<div class="step-box"><div class="s-num">5</div><div><b>راجع الحذف والفاصلة:</b> Object يتحذف ✅ — Subject لا ❌ — Non-defining لا يتحذف.</div></div>
+</div>
+
+<div class="quiz">
+<b>🎯 درّب نفسك — الأمثلة المهمة من ملفك (بكالوريا ستايل):</b>
+<ol>
+<li><span dir="ltr">The woman ___ lives next door is a doctor.</span><div class="ans">woman=شخص + بعد الفراغ lives (فعل) = فاعل → <b>who</b>.</div></li>
+<li><span dir="ltr">The woman ___ I met yesterday is a doctor.</span><div class="ans">woman=شخص + بعد الفراغ I+met = مفعول → <b>who / whom / that / ∅</b> — كلهم صح.</div></li>
+<li><span dir="ltr">The book ___ I bought is interesting.</span><div class="ans">book=شيء + I+bought = مفعول → <b>which / that / ∅</b>.</div></li>
+<li><span dir="ltr">The girl ___ father is a doctor is my friend.</span><div class="ans">ملكية (father بتاعها) → <b>whose</b>.</div></li>
+<li><span dir="ltr">This is the house ___ I grew up.</span><div class="ans">house=مكان → <b>where (= in which)</b>.</div></li>
+<li><span dir="ltr">I remember the day ___ we met.</span><div class="ans">day=وقت → <b>when (= on which)</b>.</div></li>
+<li><span dir="ltr">The man (to ___) I spoke was kind.</span><div class="ans">رسمي + حرف جر + شخص → <b>to whom</b> — عادي: <b>who/that ... to</b>.</div></li>
+<li><span dir="ltr">The company (for ___) he works is famous.</span><div class="ans">رسمي + حرف جر + شيء → <b>for which</b> — عادي: <b>that ... for</b> — ممنوع <b>for that ❌</b>.</div></li>
+</ol>
+</div>
+
+<div class="key">⭐ أهم 4 أسئلة تسألهم لنفسك في أي سؤال (من ملفك):<br>1- الاسم قبل الفراغ شخص ولا شيء ولا مكان ولا وقت؟ 2- الضمير فاعل ولا مفعول؟ 3- فيه حرف جر قبلها؟ 4- الجملة Defining ولا Non-defining؟<br><br>الخلاصة الذهبية: <span>عاقل who</span> — <span>مفعول رسمي whom</span> — <span>غير عاقل which</span> — <span>الاتنين that (Defining فقط)</span> — <span>ملكية whose</span> — <span>مكان where</span> — <span>وقت when</span><br>بعد حرف الجر: <span>شخص to whom</span> — <span>شيء for which</span> — ممنوع <span>to that ❌</span> — ممنوع <span>in where ❌</span><br><span class="en">Object → حذف ✅ | Subject → ممنوع ❌ | , , → no THAT</span></div>
+<div class="foot"><div style="display:inline-block;background:#134e4a;color:#fff;border-radius:12px;padding:8px 28px;font-weight:800;font-size:15px;margin-bottom:8px">إعداد : حبيبه ضياء الدين</div><br>Relative Clauses | تانية بكالوريا — بالتوفيق 🌟</div>
+
+</div>
+</div>
+</body>
+</html>

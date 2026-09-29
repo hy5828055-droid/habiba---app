@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Habiba's APP | موقع الملخصات</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="logo">H</div>
+    <div>
+      <h1>Habiba's APP</h1>
+      <p data-ar="موقع عرض الملخصات والشروحات" data-en="Summaries & lessons hub">موقع عرض الملخصات والشروحات</p>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="search-box">
+      <input id="search" type="search" data-ar-ph="ابحث باسم المادة أو الملف..." data-en-ph="Search by subject or file..." placeholder="ابحث باسم المادة أو الملف...">
+    </div>
+    <button id="langBtn" class="lang-btn">EN</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <h2 data-ar="كل ملخصاتك في مكان واحد" data-en="All your summaries in one place">كل ملخصاتك في مكان واحد</h2>
+    <p data-ar="اختار المادة والقسم، اعرض الملف أو حمله وابعته لصحابك" data-en="Pick a subject and section, view or download, and share with friends">اختار المادة والقسم، اعرض الملف أو حمله وابعته لصحابك</p>
+    <div class="stats">
+      <div><b id="statSubjects">3</b><span data-ar="مواد" data-en="subjects">مواد</span></div>
+      <div><b id="statFiles">3</b><span data-ar="ملفات" data-en="files">ملفات</span></div>
+    </div>
+  </div>
+</section>
+
+<nav class="filters">
+  <div class="row">
+    <span class="label" data-ar="المادة:" data-en="Subject:">المادة:</span>
+    <div class="pills" id="subjectPills">
+      <button data-subject="all" class="active" data-ar="الكل" data-en="All">الكل</button>
+      <button data-subject="arabic" data-ar="عربي" data-en="Arabic">عربي</button>
+      <button data-subject="english" data-ar="إنجليزي" data-en="English">إنجليزي</button>
+      <button data-subject="history" data-ar="تاريخ" data-en="History">تاريخ</button>
+    </div>
+  </div>
+  <div class="row">
+    <span class="label" data-ar="القسم:" data-en="Section:">القسم:</span>
+    <div class="pills" id="typePills">
+      <button data-type="all" class="active" data-ar="الكل" data-en="All">الكل</button>
+      <button data-type="sharh" data-ar="شرح" data-en="Lessons">شرح</button>
+      <button data-type="molakhas" data-ar="ملخص" data-en="Summary">ملخص</button>
+      <button data-type="exam" data-ar="امتحان" data-en="Exam">امتحان</button>
+    </div>
+  </div>
+  <div class="row" id="enSubRow" hidden>
+    <span class="label" data-ar="الإنجليزي:" data-en="English:">الإنجليزي:</span>
+    <div class="pills" id="enSubPills">
+      <button data-ensub="all" class="active" data-ar="الكل" data-en="All">الكل</button>
+      <button data-ensub="grammar" data-ar="جرامر" data-en="Grammar">جرامر</button>
+      <button data-ensub="vocab" data-ar="كلمات" data-en="Vocab">كلمات</button>
+    </div>
+  </div>
+</nav>
+
+<main id="content"></main>
+
+<footer>
+  <p>Habiba's APP • <span data-ar="صُنع بحب للمذاكرة" data-en="Made with love for studying">صُنع بحب للمذاكرة</span> © 2026</p>
+</footer>
+
+<div id="viewer" class="viewer" hidden>
+  <div class="viewer-bar">
+    <b id="viewerTitle"></b>
+    <div>
+      <a id="viewerOpen" href="#" target="_blank" class="btn ghost" data-ar="فتح في تبويب" data-en="Open in tab">فتح في تبويب</a>
+      <a id="viewerDownload" href="#" download class="btn gold" data-ar="تحميل" data-en="Download">تحميل</a>
+      <button id="viewerClose" class="btn ghost">✕</button>
+    </div>
+  </div>
+  <iframe id="viewerFrame" title="viewer"></iframe>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
