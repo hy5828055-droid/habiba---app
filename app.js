@@ -18,7 +18,8 @@ const FILES = [
   { id:5, subject:'english', type:'sharh', ensub:'vocab', kind:'pdf',
     titleAr:'الدرس الأول إنجليزي — كلمات', titleEn:'English Lesson 1 — Vocabulary',
     descAr:'ملف PDF عرض وتحميل', descEn:'PDF view and download',
-    file:'files/english lesson 1.pdf' }, ];
+    file:'files/english lesson 1.pdf' },
+];
 
 const SUBJECTS = [
   { key:'arabic', ar:'عربي', en:'Arabic' },
