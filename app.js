@@ -11,7 +11,14 @@ const FILES = [
     titleAr:'ملخص الدرس الأول — تاريخ', titleEn:'Lesson 1 Summary — History',
     descAr:'ملف PDF عرض وتحميل', descEn:'PDF view and download',
     file:'files/summary-lesson1.pdf' },
-];
+  { id:4, subject:'english', type:'sharh', ensub:'vocab', kind:'pdf',
+    titleAr:'كلمات الوحدة الأولى — إنجليزي', titleEn:'Unit 1 Vocabulary — English',
+    descAr:'ملف PDF عرض وتحميل', descEn:'PDF view and download',
+    file:'files/unit1-vocabulary.pdf' },
+  { id:5, subject:'english', type:'sharh', ensub:'vocab', kind:'pdf',
+    titleAr:'الدرس الأول إنجليزي — كلمات', titleEn:'English Lesson 1 — Vocabulary',
+    descAr:'ملف PDF عرض وتحميل', descEn:'PDF view and download',
+    file:'files/english lesson 1.pdf' }, ];
 
 const SUBJECTS = [
   { key:'arabic', ar:'عربي', en:'Arabic' },
